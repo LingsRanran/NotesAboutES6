@@ -1,0 +1,1 @@
+notes about ES6+.
