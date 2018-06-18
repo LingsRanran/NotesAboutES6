@@ -3,4 +3,4 @@ function show(str1='Welcome',str2='Moscow'){
     console.log(`${str1} to ${str2}`);
 };
 
-show();
+show();//Welcome to Moscow
