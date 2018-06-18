@@ -47,3 +47,33 @@ function fn4(){
 };
 
 fn4();
+
+//const定义对象可以更改 对象的特性
+function fn5(){
+    const obj = {
+        title:'Ranran',
+        count:100
+    };
+
+    obj.name = 'news';
+
+    console.log(obj);//Object {title: "Ranran", count: 100, name: "news"}
+};
+
+fn5();
+
+//定义不可修改的对象
+function fn6(){
+    const obj = {
+        title:'Ranran',
+        count:100
+    };
+
+    Object.freeze(obj);
+
+    obj.name = 'news';
+
+    console.log(obj);//Object {title: "Ranran", count: 100}
+};
+
+fn6();
