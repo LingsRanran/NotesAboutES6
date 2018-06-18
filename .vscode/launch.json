@@ -4,11 +4,7 @@
     // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-<<<<<<< HEAD
         
-=======
-    
->>>>>>> 7e066eaa388a00fc9f2df2d3776cdfbe63ff7485
         {
             "type": "node",
             "request": "launch",
