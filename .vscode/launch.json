@@ -9,7 +9,7 @@
             "type": "node",
             "request": "launch",
             "name": "启动程序",
-            "program": "${workspaceFolder}/js\\解构赋值.js"
+            "program": "${workspaceFolder}/js\\string.js"
         }
     ]
 }
