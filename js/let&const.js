@@ -5,6 +5,8 @@
         3，for循环 （）里是父级作用域，里面又一个
 
     建议： 用let代替var
+
+    var定义全局变量 是属于window的 let,const不同
 */
 
 function fn1(){
