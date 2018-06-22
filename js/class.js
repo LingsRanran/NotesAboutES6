@@ -25,5 +25,5 @@ class Student extends Person{
 
 let p2 = new Student('wyl',18,'chi');
 
-console.log(p1);
+console.log(typeof p1);
 console.log(p2.showSkill());

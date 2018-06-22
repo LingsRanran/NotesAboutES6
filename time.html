@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #foot{
+            position: fixed;
+            bottom: 0;
+            height: 20px;
+            background: #000;
+            width: 0;
+        }
+    </style>
+    <script>
+        function toPercent(point){
+            let str=Number(point*100).toFixed(1);
+            str+="%";
+            return str;
+        }
+
+        window.onload = function(){
+            let sec = 0;
+            let oFoot = document.getElementById('foot');
+            let oHour = document.getElementById('hour');
+            let oMin = document.getElementById('min');
+            let oSec = document.getElementById('sec');
+
+            let timer1 = setInterval(function(){
+                let oDate = new Date();
+                if(sec > 5000){
+                    clearInterval(timer1);
+                };
+
+                oHour.innerText = oDate.getHours();
+                oMin.innerText = oDate.getMinutes();
+                oSec.innerText = oDate.getSeconds();
+
+                sec += 10;
+                oFoot.style.width = toPercent(sec/5000);
+            },10);
+        }
+    </script>
+</head>
+<body>
+    <span id="hour"></span>时 <span id="min"></span>分 <span id="sec"></span>秒
+    <div id="foot"></div>
+</body>
+</html>
