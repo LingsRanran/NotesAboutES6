@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap{
+            margin: 100px auto;
+            width: 322px;
+        }
+
+        #userInput{
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        button{
+            height: 35px;
+            width: 50px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        #show_box{
+            width: 320px;
+            margin-top:10px; 
+            border: 1px solid #000;
+        }
+
+        #show_box:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .show_box_little{
+            width: 38px;
+            border: 1px solid #000;
+            height: 80px;
+            float: left;
+        }
+
+        span{
+            display: inline-block;
+            width: 36px;
+            height: 38px;
+            border: 1px solid #000;
+            font-size: 18px;
+            color: red;
+            font-weight: bold;
+            line-height: 38px;
+            text-align: center;
+        }
+
+        span.little{
+            color: #000;
+            font-weight: normal;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            let oBtn = document.getElementsByTagName('button')[0];
+            let oInput = document.getElementById('userInput');
+
+            oBtn.onclick = function(){
+                let strInput = oInput.value;
+                
+                if(strInput.includes('+')){
+                    let arr = strInput.split('+');
+
+                    let oSpan = document.getElementsByClassName(arr[0])[0];
+
+                    oSpan.innerHTML = parseInt(oSpan.innerHTML) + parseInt(arr[1]);
+                }
+            };
+        };
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <input type="text" name="userInput" id="userInput"> <button>输入</button>
+        <div id="show_box">
+            <div class="show_box_little"><span>1</span><span class="1 little">0</span></div>
+            <div class="show_box_little"><span>2</span><span class="2 little">0</span></div>
+            <div class="show_box_little"><span>3</span><span class="3 little">0</span></div>
+            <div class="show_box_little"><span>4</span><span class="4 little">0</span></div>
+            <div class="show_box_little"><span>5</span><span class="5 little">0</span></div>
+            <div class="show_box_little"><span>6</span><span class="6 little">0</span></div>
+            <div class="show_box_little"><span>7</span><span class="7 little">0</span></div>
+            <div class="show_box_little"><span>8</span><span class="8 little">0</span></div>
+            <div class="show_box_little"><span>9</span><span class="9 little">0</span></div>
+            <div class="show_box_little"><span>10</span><span class="10 little">0</span></div>
+            <div class="show_box_little"><span>11</span><span class="11 little">0</span></div>
+            <div class="show_box_little"><span>12</span><span class="12 little">0</span></div>
+            <div class="show_box_little"><span>13</span><span class="13 little">0</span></div>
+            <div class="show_box_little"><span>14</span><span class="14 little">0</span></div>
+            <div class="show_box_little"><span>15</span><span class="15 little">0</span></div>
+            <div class="show_box_little"><span>16</span><span class="16 little">0</span></div>
+            <div class="show_box_little"><span>17</span><span class="17 little">0</span></div>
+            <div class="show_box_little"><span>18</span><span class="18 little">0</span></div>
+            <div class="show_box_little"><span>19</span><span class="19 little">0</span></div>
+            <div class="show_box_little"><span>20</span><span class="20 little">0</span></div>
+            <div class="show_box_little"><span>21</span><span class="21 little">0</span></div>
+            <div class="show_box_little"><span>22</span><span class="22 little">0</span></div>
+            <div class="show_box_little"><span>23</span><span class="23 little">0</span></div>
+            <div class="show_box_little"><span>24</span><span class="24 little">0</span></div>
+            <div class="show_box_little"><span>25</span><span class="25 little">0</span></div>
+            <div class="show_box_little"><span>26</span><span class="26 little">0</span></div>
+            <div class="show_box_little"><span>27</span><span class="27 little">0</span></div>
+            <div class="show_box_little"><span>28</span><span class="28 little">0</span></div>
+            <div class="show_box_little"><span>29</span><span class="29 little">0</span></div>
+            <div class="show_box_little"><span>30</span><span class="30 little">0</span></div>
+            <div class="show_box_little"><span>31</span><span class="31 little">0</span></div>
+        </div>
+    </div>
+</body>
+</html>
