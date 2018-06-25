@@ -9,7 +9,7 @@
             "type": "node",
             "request": "launch",
             "name": "启动程序",
-            "program": "${workspaceFolder}\\js/use_module_node.js"
+            "program": "${workspaceFolder}\\js/位运算符.js"
         }
     ]
 }
